@@ -2,16 +2,17 @@
 .main-section {
   height: 100vh;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
+  /* background-repeat: no-repeat; */
   color: white;
   font-family: 'Poppins', sans-serif;
-  background-image: url("/assets/bg1.png");
+  background-image: url("/assets/bg2.png");
 }
 
 /* Logo */
 .logo {
   font-weight: bold;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: white;
 }
 
@@ -19,7 +20,7 @@
 .nav-link {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-size: 16px;
 }
 
 .nav-link:hover {
@@ -32,33 +33,45 @@
   border: none;
   color: white;
   padding: 6px 16px;
-  border-radius: 20px;
+  border-radius: 0;
+  font-size: 16px;
 }
 
 /* Hero title */
 .hero-title {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: bold;
+  color: #EE9322;
 }
 
 /* Hero subtitle */
 .hero-subtitle {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: normal;
   font-family: 'Poppins', sans-serif;
 }
+
+.hero-text {
+  margin-top: 200px;
+  margin-left: 240px; /* more space from left */
+}
+
 
 /* Buttons in hero */
 .contact-main {
   background-color: #212020;
   border: none;
   padding: 10px 20px;
+  border-radius: 0;
+    font-size: 14px;
 }
 
 .download-btn {
   border: 2px solid white;
   padding: 10px 20px;
   color: white;
+  border-radius: 0;
+    font-size: 14px;
 }

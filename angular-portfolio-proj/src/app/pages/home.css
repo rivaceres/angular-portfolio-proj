@@ -65,7 +65,7 @@
   border: none;
   padding: 10px 20px;
   border-radius: 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .download-btn {
@@ -73,5 +73,12 @@
   padding: 10px 20px;
   color: white;
   border-radius: 0;
-    font-size: 14px;
+    font-size: 16px;
+}
+
+/* Tech Stack Section */
+.techstack-section {
+  /* background-color: #1a1714; */
+  background-image: url("/assets/techbg.png");
+  /* background-position: center; */
 }

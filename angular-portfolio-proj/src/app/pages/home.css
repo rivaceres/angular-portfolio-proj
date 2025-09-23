@@ -41,7 +41,7 @@
 .hero-title {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 48px;
+  font-size: 56px;
   font-weight: bold;
   color: #EE9322;
 }
@@ -80,5 +80,4 @@
 .techstack-section {
   /* background-color: #1a1714; */
   background-image: url("/assets/techbg.png");
-  /* background-position: center; */
 }

@@ -1,0 +1,80 @@
+.projects-section {
+  background-color: #0a0b00;
+}
+
+/* Section styling */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #EE9322;
+
+}
+
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background-color: #EE9322;
+  color: #EE9322;
+  margin: 10px;
+}
+
+.section-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+/* Card styling */
+.card {
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+}
+
+.card-title{
+    color: #EE9322;
+}
+
+.card-text {
+  font-size: 16px;
+  color: white;
+}
+
+.project-img {
+  height: 200px;            /* consistent height */
+  object-fit: cover;        /* keeps ratio without stretching */
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-img:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+/* Blur effect only for proj3 image */
+.project-blur {
+  filter: blur(4px);
+}
+
+.lock-icon {
+  width: 96px;
+  height: auto;
+  opacity: 0.9;
+  filter: brightness(0) saturate(100%) invert(94%) sepia(6%) saturate(340%) hue-rotate(23deg) brightness(104%) contrast(95%);
+}
+
+
+/* Tags styling */
+.tags {
+  margin-top: 10px;
+}
+
+.tags span {
+  display: inline-block;
+  background-color: #212020;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  margin: 2px;
+}
+
+

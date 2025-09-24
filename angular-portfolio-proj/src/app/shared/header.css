@@ -1,0 +1,47 @@
+/* Make the header overlay the page content and be transparent */
+header {
+  position: absolute;      /* change to fixed if you want it to stay while scrolling */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  z-index: 1000;           /* keep it above page content */
+}
+
+/* spacing: keep your bootstrap utilities if you like them, but ensure no bg-color classes remain */
+
+/* Logo & links: update colors so they are visible on top of background */
+.logo {
+  color: white;            /* or choose color appropriate to your background */
+  font-weight: 700;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Contact styled like a bordered button but transparent */
+.contact-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 0;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: white;
+  color: black;
+}

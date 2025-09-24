@@ -1,41 +1,43 @@
 <!-- Main Section -->
 <div class="main-section d-flex flex-column">
+  <div class="container">
+    <!-- Hero Text -->
+    <div class="hero-text text-start pt-5 ps-5">
+      <h1 class="hero-title">
+        Hi. I'm <br />
+        Riva Ceres.
+      </h1>
+      <h6 class="hero-subtitle mt-4 mb-4">A UIUX Designer & Software Engineer.</h6>
 
-  <!-- Hero Text -->
-  <div class="hero-text text-start pt-5 ps-5">
-    <h1 class="hero-title">Hi I'm <br> Riva Ceres.</h1>
-    <h6 class="hero-subtitle mt-4 mb-4">A UIUX Designer & Software Engineer.</h6>
-
-    <!-- Buttons -->
-    <div class="d-flex gap-4">
-      <button a href="mailto:rivacerslao@gmail.com" class="btn btn-primary contact-main">Contact</button>
-      <a href="assets/LaorenoResume.pdf" download class="btn btn-outline-light download-btn">
-  Download CV
-</a>
+      <!-- Buttons -->
+      <div class="d-flex gap-4">
+        <button a href="mailto:rivacerslao@gmail.com" class="btn btn-primary contact-main">
+          Contact
+        </button>
+        <a href="assets/LaorenoResume.pdf" download class="btn btn-outline-light download-btn">
+          Download CV
+        </a>
+      </div>
     </div>
   </div>
-
 </div>
-
 
 <!-- Tech Stack Section -->
 <section class="techstack-section py-5">
-  <div class="container">
-
-    <!-- Row 1 (12 icons) -->
-    <div class="row justify-content-center g-4 mb-4 mt-2">
-      <div class="col-3 col-md-3 col-lg-1" *ngFor="let icon of techIcons.slice(0,12)">
-        <img [src]="icon.src" [alt]="icon.alt" class="img-fluid" style="max-width:48px;">
+  <div class="container text-center">
+    <!-- Row 1 -->
+    <div class="row row-cols-4 row-cols-md-8 row-cols-lg-12 g-4 mb-4 mt-2">
+      <div class="col" *ngFor="let icon of techIcons.slice(0, 12)">
+        <img [src]="icon.src" [alt]="icon.alt" class="img-fluid" style="max-width: 48px" />
       </div>
     </div>
 
-    <!-- Row 2 (10 icons) -->
-    <div class="row justify-content-center g-4 mb-4">
-      <div class="col-3 col-md-3 col-lg-1" *ngFor="let icon of techIcons.slice(12)">
-        <img [src]="icon.src" [alt]="icon.alt" class="img-fluid" style="max-width:60px;">
+    <!-- Row 2 -->
+    <div class="row row-cols-4 row-cols-md-8 row-cols-lg-10 g-4 mb-4">
+      <div class="col" *ngFor="let icon of techIcons.slice(12)">
+        <img [src]="icon.src" [alt]="icon.alt" class="img-fluid" style="max-width: 60px" />
       </div>
     </div>
-
   </div>
 </section>
 
@@ -43,9 +45,3 @@
 
 <!-- Projects Section -->
 <app-projects></app-projects>
-
-
-
-
-
-

@@ -1,35 +1,27 @@
-/* Make the header overlay the page content and be transparent */
 header {
-  position: absolute;      /* change to fixed if you want it to stay while scrolling */
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background: transparent !important;
-  border: none !important;
   box-shadow: none !important;
-  z-index: 1000;           /* keep it above page content */
+  z-index: 1030;
 }
 
-/* spacing: keep your bootstrap utilities if you like them, but ensure no bg-color classes remain */
-
-/* Logo & links: update colors so they are visible on top of background */
+/* Logo */
 .logo {
-  color: white;            /* or choose color appropriate to your background */
+  color: white;
   font-weight: 700;
+  text-decoration: none;
 }
 
+/* Nav links */
 .nav-link {
   color: white;
-  text-decoration: none;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .nav-link:hover {
   text-decoration: underline;
 }
 
-/* Contact styled like a bordered button but transparent */
+/* Contact button */
 .contact-btn {
   display: inline-block;
   padding: 8px 16px;
@@ -44,4 +36,17 @@ header {
 .contact-btn:hover {
   background-color: white;
   color: black;
+}
+
+/* Bootstrap hamburger icon visibility on dark bg */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* makes the hamburger white */
+}
+
+.navbar {
+  font-family: poppins, sans-serif;
 }

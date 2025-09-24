@@ -1,6 +1,11 @@
 .projects-section {
   background-color: #0a0b00;
+  min-height: calc(100vh - 60px); /* full viewport height minus footer height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
 }
+
 
 /* Section styling */
 .section-title {
@@ -28,7 +33,20 @@
 .card {
   font-family: 'Poppins', sans-serif;
   background-color: transparent;
+  transition: transform 0.4s ease; 
 }
+
+.card:hover {
+  transform: scale(1.03);       /* white border when hovered */
+}
+
+/* prevent link styles messing up cards */
+.card-link {
+  text-decoration: none; /* remove underline */
+  color: inherit;        /* keep text color */
+  display: block;        /* make whole card clickable */
+}
+
 
 .card-title{
     color: #EE9322;
@@ -43,11 +61,7 @@
   height: 200px;            /* consistent height */
   object-fit: cover;        /* keeps ratio without stretching */
   width: 100%;
-  transition: box-shadow 0.3s ease;
-}
-
-.project-img:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  /* transition: transform 0.4s ease; */
 }
 
 /* Blur effect only for proj3 image */

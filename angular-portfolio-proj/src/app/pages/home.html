@@ -24,24 +24,47 @@
 
 <!-- Tech Stack Section -->
 <section class="techstack-section py-5">
-  <div class="container text-center">
-    <!-- Row 1 -->
-    <div class="row row-cols-4 row-cols-md-8 row-cols-lg-12 g-4 mb-4 mt-2">
-      <div class="col" *ngFor="let icon of techIcons.slice(0, 12)">
-        <img [src]="icon.src" [alt]="icon.alt" class="img-fluid" style="max-width: 48px" />
+  <div class="container">
+    <!-- Row 1 (12 icons) -->
+    <div class="row justify-content-center g-4 mb-4 mt-2">
+      <div class="col-4 col-sm-3 col-md-2 col-lg-1 d-flex justify-content-center"
+           *ngFor="let icon of techIcons.slice(0, 12)">
+        <img [src]="icon.src" [alt]="icon.alt" class="img-fluid tech-icon" />
       </div>
     </div>
 
-    <!-- Row 2 -->
-    <div class="row row-cols-4 row-cols-md-8 row-cols-lg-10 g-4 mb-4">
-      <div class="col" *ngFor="let icon of techIcons.slice(12)">
-        <img [src]="icon.src" [alt]="icon.alt" class="img-fluid" style="max-width: 60px" />
+    <!-- Row 2 (10 icons) -->
+    <div class="row justify-content-center g-4 mb-4">
+      <div class="col-4 col-sm-3 col-md-2 col-lg-1 d-flex justify-content-center"
+           *ngFor="let icon of techIcons.slice(12)">
+        <img [src]="icon.src" [alt]="icon.alt" class="img-fluid tech-icon-large" />
       </div>
     </div>
   </div>
 </section>
-
 <!-- End of Tech Stack Section -->
 
 <!-- Projects Section -->
 <app-projects></app-projects>
+
+<!-- CTA Section -->
+<app-cta-section>
+  <div cta-title>
+    <h2 class="cta-title">Let's bring your ideas to life.</h2>
+  </div>
+  
+  <div cta-text>
+    <p class="cta-text">
+      Your vision deserves a website that works flawlessly and stands out—let's make it happen.
+    </p>
+  </div>
+  
+  <div cta-buttons>
+    <a href="mailto:rivacerslao@gmail.com" class="btn btn-primary cta-contact">
+      Contact
+    </a>
+    <a href="assets/LaorenoResume.pdf" download class="btn btn-outline-dark cta-download">
+      Download CV
+    </a>
+  </div>
+</app-cta-section>

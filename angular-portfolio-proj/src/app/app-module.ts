@@ -8,6 +8,8 @@ import { Projects } from './pages/projects';
 import { About } from './pages/about';
 import { Header } from './shared/header';
 import { Footer } from './shared/footer';
+import { CtaSection } from './shared/cta-section';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { Footer } from './shared/footer';
     Projects,
     About,
     Header,
-    Footer
+    Footer,
+    CtaSection,
   ],
   imports: [
     BrowserModule,

@@ -15,10 +15,19 @@ header {
   color: white;
   font-size: 16px;
   text-decoration: none;
+  transition: color 0.3s ease; /* smooth color change */
 }
 
+/* Active link */
+.nav-link.active {
+  color: white !important; /* force white */
+  font-weight: 700;        /* bold when active */
+}
+
+/* Hover state */
 .nav-link:hover {
-  text-decoration: underline;
+  color: #EE9322;
+  text-decoration: none;   /* no underline */
 }
 
 /* Contact button */
@@ -30,7 +39,7 @@ header {
   background-color: transparent;
   color: white;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease; /* smooth transition */
 }
 
 .contact-btn:hover {
@@ -48,5 +57,5 @@ header {
 }
 
 .navbar {
-  font-family: poppins, sans-serif;
+  font-family: Poppins, sans-serif;
 }

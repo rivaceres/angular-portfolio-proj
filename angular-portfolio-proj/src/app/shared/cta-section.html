@@ -1,0 +1,18 @@
+<section class="cta-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Side - Text Content -->
+      <div class="col-lg-6">
+        <ng-content select="[cta-title]"></ng-content>
+        <ng-content select="[cta-text]"></ng-content>
+      </div>
+      
+      <!-- Right Side - Buttons -->
+      <div class="col-lg-6">
+        <div class="d-flex gap-4 justify-content-lg-start justify-content-center">
+          <ng-content select="[cta-buttons]"></ng-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

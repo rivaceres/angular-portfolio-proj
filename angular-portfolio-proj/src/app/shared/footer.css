@@ -1,0 +1,7 @@
+.footer {
+  background: transparent; /* invisible like header */
+  box-shadow: none;        /* no shadow */
+  font-family: 'Poppins', sans-serif;
+  /* color: white; */
+  font-size: 14px;
+}

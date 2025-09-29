@@ -62,3 +62,24 @@ header {
 .navbar {
   font-family: Poppins, sans-serif;
 }
+
+
+/* Mobile/Tablet menu */
+@media (max-width: 991.98px) {
+  #navbarNav {
+    background-color: #0a0b00;   /* dark background */
+    padding: 1rem;
+    text-align: right;           /* align items right */
+  }
+
+  #navbarNav .nav-link {
+    display: block;
+    padding: 10px;
+  }
+
+  /* X button styling */
+  #navbarNav .btn-close {
+    filter: invert(1); /* white X */
+    font-size: 1.5rem;
+  }
+}

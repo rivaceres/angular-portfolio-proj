@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })
-export class Projects {
+export class Projects implements AfterViewInit {
 
 @Input() showTechStack: boolean = true;
 
@@ -46,4 +46,21 @@ export class Projects {
     { src: 'assets/krita.png', alt: 'Krita' },
     { src: 'assets/canva.png', alt: 'Canva' },
   ];
+
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-active');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const elements = document.querySelectorAll('.animate-up');
+    elements.forEach((el) => observer.observe(el));
+  }
+
 }

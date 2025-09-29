@@ -7,13 +7,13 @@
         Hi. I'm <br />
         Riva Ceres.
       </h1>
-      <h6 class="hero-subtitle mt-4 mb-4 animate-up delay-2">A UIUX Designer & Software Engineer.</h6>
+      <h6 class="hero-subtitle mt-4 mb-4 animate-up delay-2">
+        A UIUX Designer & Software Engineer.
+      </h6>
 
       <!-- Buttons -->
       <div class="d-flex gap-4 animate-up delay-3">
-        <button a href="mailto:rivacerslao@gmail.com" class="btn btn-primary contact-main">
-          Contact
-        </button>
+        <a href="mailto:rivacerslao@gmail.com" class="btn btn-primary contact-main"> Contact </a>
         <a href="assets/LaorenoResume.pdf" download class="btn btn-outline-light download-btn">
           Download CV
         </a>
@@ -27,16 +27,20 @@
   <div class="container">
     <!-- Row 1 (12 icons) -->
     <div class="row justify-content-center g-4 mb-4 mt-2">
-      <div class="col-4 col-sm-3 col-md-2 col-lg-1 d-flex justify-content-center"
-           *ngFor="let icon of techIcons.slice(0, 12)">
+      <div
+        class="col-4 col-sm-3 col-md-2 col-lg-1 d-flex justify-content-center"
+        *ngFor="let icon of techIcons.slice(0, 12)"
+      >
         <img [src]="icon.src" [alt]="icon.alt" class="img-fluid tech-icon" />
       </div>
     </div>
 
     <!-- Row 2 (10 icons) -->
     <div class="row justify-content-center g-4 mb-4">
-      <div class="col-4 col-sm-3 col-md-2 col-lg-1 d-flex justify-content-center"
-           *ngFor="let icon of techIcons.slice(12)">
+      <div
+        class="col-4 col-sm-3 col-md-2 col-lg-1 d-flex justify-content-center"
+        *ngFor="let icon of techIcons.slice(12)"
+      >
         <img [src]="icon.src" [alt]="icon.alt" class="img-fluid tech-icon-large" />
       </div>
     </div>

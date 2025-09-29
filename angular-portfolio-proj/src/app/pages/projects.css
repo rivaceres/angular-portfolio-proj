@@ -1,6 +1,7 @@
 .projects-section {
   background-color: #0a0b00;
-  min-height: 100vh; /* full viewport height minus footer height */
+  min-height: calc(100vh - 80px);
+ /* full viewport height minus footer height */
   display: flex;
   flex-direction: column;
   justify-content: center; /* vertically center content */
@@ -91,4 +92,17 @@
   margin: 2px;
 }
 
+
+/* Tech Stack Section */
+.techstack-section {
+  background-image: url('/assets/techbg.png');
+}
+
+.tech-icon {
+  max-width: 48px;
+}
+
+.tech-icon-large {
+  max-width: 60px;
+}
 

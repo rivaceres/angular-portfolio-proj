@@ -83,5 +83,25 @@
 </section>
 <!-- End of Projects Section -->
 
+<!-- Tech Stack Section (conditionally shown) -->
+<section class="techstack-section py-5" *ngIf="showTechStack">
+  <div class="container">
+    <div class="row justify-content-center g-4 mb-4 mt-2">
+      <div class="col-4 col-sm-3 col-md-2 col-lg-1 d-flex justify-content-center"
+           *ngFor="let icon of techIcons.slice(0, 12)">
+        <img [src]="icon.src" [alt]="icon.alt" class="img-fluid tech-icon" />
+      </div>
+    </div>
+
+    <div class="row justify-content-center g-4 mb-4">
+      <div class="col-4 col-sm-3 col-md-2 col-lg-1 d-flex justify-content-center"
+           *ngFor="let icon of techIcons.slice(12)">
+        <img [src]="icon.src" [alt]="icon.alt" class="img-fluid tech-icon-large" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Tech Stack Section -->
+
 <!-- CTA Section -->
 <app-cta-section></app-cta-section>

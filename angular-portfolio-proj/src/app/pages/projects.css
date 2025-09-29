@@ -1,6 +1,6 @@
 .projects-section {
   background-color: #0a0b00;
-  min-height: calc(100vh - 60px); /* full viewport height minus footer height */
+  min-height: 100vh; /* full viewport height minus footer height */
   display: flex;
   flex-direction: column;
   justify-content: center; /* vertically center content */

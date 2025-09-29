@@ -1,27 +1,55 @@
 /* CTA Section */
 .cta-section {
-  background-color: #f8f9fa;
-  padding: 80px 0;
+  /* background-color: #f8f9fa; */
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-  .cta-section .row {
-    text-align: center;
-  }
-  
-  .d-flex.gap-4 {
-    justify-content: center !important;
-  }
+.cta-heading {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #EE9322;
+  line-height: 1.2;
 }
 
-@media (max-width: 576px) {
-  .cta-section {
-    padding: 60px 0;
-  }
-  
-  .d-flex.gap-4 {
-    flex-direction: column;
-    gap: 1rem !important;
-  }
+.cta-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.cta-contact {
+  background-color: #EE9322;
+  border: 0;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cta-contact:hover {
+  background-color: #212020;
+  color: #fff;
+}
+
+.cta-download {
+  border: 2px solid #212020;
+  background-color: transparent;
+  color: #212020;
+  padding: 12px 30px;
+  border-radius: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cta-download:hover {
+  background-color: #212020;
+  color: #fff;
 }

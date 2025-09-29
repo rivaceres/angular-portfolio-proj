@@ -21,7 +21,7 @@ header {
 /* Active link */
 .nav-link.active {
   color: white !important; /* force white */
-  font-weight: 700;        /* bold when active */
+  font-weight: 900;        /* bold when active */
 }
 
 /* Hover state */
@@ -29,6 +29,9 @@ header {
   color: #EE9322;
   text-decoration: none;   /* no underline */
 }
+
+
+
 
 /* Contact button */
 .contact-btn {
@@ -43,8 +46,8 @@ header {
 }
 
 .contact-btn:hover {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #212020;
 }
 
 /* Bootstrap hamburger icon visibility on dark bg */

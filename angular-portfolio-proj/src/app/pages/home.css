@@ -7,24 +7,12 @@
   overflow-x: hidden; /* prevent horizontal scroll */
   color: white;
   font-family: 'Poppins', sans-serif;
-  background-image: url("/assets/bg2.png");
-}
-
-
-
-/* Contact button in header */
-.contact-btn {
-  background-color: #212020;
-  border: none;
-  color: white;
-  padding: 6px 16px;
-  border-radius: 0;
-  font-size: 16px;
+  background-image: url('/assets/bg2.png');
 }
 
 /* Hero text section */
 .hero-section {
-  padding-top: 120px;   /* spacing from the top of the page */
+  padding-top: 120px; /* spacing from the top of the page */
   padding-bottom: 60px; /* optional: breathing room at bottom */
 }
 
@@ -33,7 +21,7 @@
   font-style: italic;
   font-size: 56px;
   font-weight: bold;
-  color: #EE9322;
+  color: #ee9322;
 }
 
 .hero-subtitle {
@@ -48,27 +36,43 @@
   padding-left: 16px;
 }
 
-
 /* Buttons in hero */
 .contact-main {
   background-color: #212020;
   border: none;
   padding: 10px 20px;
   border-radius: 0;
-    font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contact-main:hover {
+  background-color: #fff;
+  color: #212020;
 }
 
 .download-btn {
   border: 2px solid white;
-  padding: 10px 20px;
+  background-color: transparent;
   color: white;
+  padding: 12px 30px;
   border-radius: 0;
-    font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #fff;
+  color: #212020;
 }
 
 /* Tech Stack Section */
 .techstack-section {
-  background-image: url("/assets/techbg.png");
+  background-image: url('/assets/techbg.png');
 }
 
 .tech-icon {
@@ -79,81 +83,3 @@
   max-width: 60px;
 }
 
-
-/* CTA Section */
-.cta-title {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-.cta-text {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 0;
-}
-
-/* CTA Buttons */
-.cta-contact {
-  background-color: #212020;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-
-.cta-contact:hover {
-  background-color: #333;
-  color: white;
-  transform: translateY(-2px);
-}
-
-.cta-download {
-  border: 2px solid #212020;
-  color: #212020;
-  padding: 12px 30px;
-  border-radius: 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  background-color: transparent;
-  transition: all 0.3s ease;
-}
-
-.cta-download:hover {
-  background-color: #212020;
-  color: white;
-  transform: translateY(-2px);
-}
-
-/* Mobile responsive for CTA */
-@media (max-width: 992px) {
-  .cta-title {
-    font-size: 2rem;
-  }
-  
-  .cta-text {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .cta-title {
-    font-size: 1.75rem;
-  }
-  
-  .cta-contact,
-  .cta-download {
-    width: 100%;
-    max-width: 250px;
-  }
-}

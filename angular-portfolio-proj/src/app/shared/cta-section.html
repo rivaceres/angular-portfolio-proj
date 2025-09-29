@@ -1,18 +1,26 @@
-<section class="cta-section py-5">
+<!-- CTA Section -->
+<section class="cta-section py-5 m-5">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center justify-content-between text-center text-lg-start">
+      
       <!-- Left Side - Text Content -->
-      <div class="col-lg-6">
-        <ng-content select="[cta-title]"></ng-content>
-        <ng-content select="[cta-text]"></ng-content>
+      <div class="col-lg-8 mb-4 mb-lg-0">
+        <h2 class="cta-heading mb-3">Let's bring your ideas to life.</h2>
+        <p class="cta-text mb-0">
+          Your vision deserves a website that works flawlessly and stands out—let's make it happen.
+        </p>
       </div>
       
       <!-- Right Side - Buttons -->
-      <div class="col-lg-6">
-        <div class="d-flex gap-4 justify-content-lg-start justify-content-center">
-          <ng-content select="[cta-buttons]"></ng-content>
-        </div>
+      <div class="col-lg-4 d-flex flex-column flex-sm-row justify-content-center justify-content-lg-end gap-3">
+        <a href="mailto:rivacerslao@gmail.com" class="btn btn-primary cta-contact">
+          Contact
+        </a>
+        <a href="assets/LaorenoResume.pdf" download class="btn btn-outline-dark cta-download">
+          Download CV
+        </a>
       </div>
+
     </div>
   </div>
 </section>

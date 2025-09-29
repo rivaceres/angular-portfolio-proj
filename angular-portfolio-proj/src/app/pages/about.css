@@ -71,6 +71,13 @@
   margin: 10px;
 }
 
+/* Fix spacing between image and text */
+@media (max-width: 992px) {
+  .about-hero-section .col-lg-6.text-white {
+    margin-top: 3rem; /* add breathing room under image */
+  }
+}
+
 
 /* Image */
 .about-img {

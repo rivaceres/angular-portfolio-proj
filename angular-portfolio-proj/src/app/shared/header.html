@@ -4,28 +4,56 @@
     <a class="navbar-brand logo mb-0" routerLink="/home">webfolio</a>
 
     <!-- Toggler (hamburger) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- collapse here -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <!-- X Button (only shows on mobile/tab) -->
-      <button 
-        class="btn-close btn-close-white ms-auto mt-3 me-3 d-lg-none" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav" 
-        aria-label="Close">
+      <button
+        class="btn-close btn-close-white ms-auto mt-3 me-3 d-lg-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-label="Close"
+      >
       </button>
 
-      <!-- Your nav links -->
-      <ul class="navbar-nav ms-auto text-center text-lg-start g-3">
-        <li class="nav-item"><a class="nav-link active" routerLink="/home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/projects">Projects</a></li>
-        <!-- <li class="nav-item"><a class="nav-link" routerLink="" target="_blank">LinkedIn</a></li> -->
-        <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+      <!-- nav links -->
+      <ul class="navbar-nav ms-auto text-center text-lg-start gap-4">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="https://www.linkedin.com/in/your-linkedin-username"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="btn btn-primary px-3 py-2 rounded-0 contact-btn"
+            routerLink="/contact"
+          >
+            Contact
+          </a>
+        </li>
       </ul>
     </div>
   </nav>

@@ -31,22 +31,19 @@ header {
 }
 
 
-
-
 /* Contact button */
 .contact-btn {
   display: inline-block;
   padding: 8px 16px;
-  border: 2px solid white;
-  border-radius: 0;
-  background-color: transparent;
+  border: 0;
+  background-color: #212020;
   color: white;
   text-decoration: none;
   transition: all 0.3s ease; /* smooth transition */
 }
 
 .contact-btn:hover {
-  background-color: #fff;
+  background-color: #ee9322;
   color: #212020;
 }
 

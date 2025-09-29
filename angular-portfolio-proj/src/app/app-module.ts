@@ -9,6 +9,7 @@ import { About } from './pages/about';
 import { Header } from './shared/header';
 import { Footer } from './shared/footer';
 import { CtaSection } from './shared/cta-section';
+import { ScrollToTop } from './shared/scroll-to-top';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { CtaSection } from './shared/cta-section';
     Header,
     Footer,
     CtaSection,
+    ScrollToTop,
   ],
   imports: [
     BrowserModule,

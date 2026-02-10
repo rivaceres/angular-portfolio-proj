@@ -1,12 +1,10 @@
-<<<<<<< HEAD
+
 {
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/index.html"
+            "destination": "/"
         }
     ]
 }
-=======
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
->>>>>>> parent of 569da6b (json format updated)
+
